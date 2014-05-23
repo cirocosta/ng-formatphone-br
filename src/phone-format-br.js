@@ -63,7 +63,6 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
           } else {
             result += '(' + ddd + ') ' + prefix;
           }
-
         }
       }
     }

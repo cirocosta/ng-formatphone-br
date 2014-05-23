@@ -1,10 +1,18 @@
 # FormatPhoneBR
 
+See it [live!](plnkr.co/KaXW4oPFSkDWg9xlEihD)
+
 ## Quickuse
 
-### Filter Only
+For using this lib you're just required to perform:
 
-### Directive
+```sh
+$ bower install ng-format-phone-br  # i didn't push this registry yet
+```
+
+and then add it to your angular project as you do with any other libs (will describe this later).
+
+For usage, see the demo (the same that is on [plunker](plnkr.co/KaXW4oPFSkDWg9xlEihD))
 
 ## Building && Testing
 
