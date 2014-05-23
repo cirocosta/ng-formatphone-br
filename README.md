@@ -25,7 +25,7 @@ As a filter, filters it (ooooh, don't say), and as a directive, 'masks' the inpu
 For using this lib you're just required to perform:
 
 ```sh
-$ bower install ng-format-phone-br  # i didn't push this registry yet
+$ bower install ng-format-phone-br
 ```
 
 and then add it to your angular project as you do with any other libs (will describe this later).
