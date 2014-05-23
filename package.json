@@ -1,0 +1,36 @@
+{
+  "name": "ng-formatPhone-br",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "update-webdriver": "webdriver-manager update",
+    "test": "karma start test/karma.conf.js",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor test/protractor-conf.js",
+
+    "start-server": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cirocosta/ng-formatphone-br.git"
+  },
+  "author": "Ciro S. Costa <ciro9758@gmail.com> (http://www.cirocosta.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cirocosta/ng-formatphone-br/issues"
+  },
+  "homepage": "https://github.com/cirocosta/ng-formatphone-br",
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.6.1",
+    "gulp-util": "^2.2.14",
+    "http-server": "^0.6.1",
+    "karma": "^0.12.16",
+    "protractor": "^0.23.1"
+  }
+}

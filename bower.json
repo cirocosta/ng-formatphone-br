@@ -1,0 +1,19 @@
+{
+  "name": "ng-formatPhone-br",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cirocosta/ng-formatphone-br",
+  "authors": [
+    "Ciro S. Costa <ciro.costa@usp.br>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.2.x"
+  }
+}
