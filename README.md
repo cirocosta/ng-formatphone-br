@@ -2,6 +2,24 @@
 
 See it [live!](http://plnkr.co/KaXW4oPFSkDWg9xlEihD)
 
+## What it does?
+
+As a filter, filters it (ooooh, don't say), and as a directive, 'masks' the input.
+
+|      from     |        to       |
+| ------------- | --------------- |
+|  551132078877 | (11) 3207-8877  |
+|    1132078877 | (11) 3207-8877  |
+|   55112078877 | (11) 207-8877   |
+|       1198181 | (11) 98181      |
+| 5511932078877 | (11) 93207-8877 |
+|   11932078877 | (11) 93207-8877 |
+|         10315 | 10315           |
+|           199 | 199             |
+|          0800 | 0800            |
+|       0800215 | 0800 215        |
+|   08007260505 | 0800 726 0505   |
+
 ## Quickuse
 
 For using this lib you're just required to perform:
