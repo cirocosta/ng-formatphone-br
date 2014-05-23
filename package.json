@@ -10,8 +10,7 @@
     "update-webdriver": "webdriver-manager update",
     "test": "karma start test/karma.conf.js",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor test/protractor-conf.js",
-
+    "protractor": "protractor test/protractor.conf.js",
     "start-server": "node node_modules/http-server/bin/http-server"
   },
   "repository": {
@@ -31,6 +30,9 @@
     "gulp-util": "^2.2.14",
     "http-server": "^0.6.1",
     "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-junit-reporter": "^0.2.2",
     "protractor": "^0.23.1"
   }
 }
