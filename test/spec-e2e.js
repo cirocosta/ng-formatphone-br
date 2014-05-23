@@ -15,4 +15,15 @@ describe('phoneFormatBr', function() {
       expect(pI.getText()).toEqual('(11) 3207-8877');
     });
   });
+
+  describe('directive,', function () {
+
+    it('should apply itself', function () {
+      element(by.model('phoneInput')).sendKeys('551132078877');
+      var pim = element(by.model('phoneInput'));
+
+      expect(pim.getAttribute('value')).toEqual('(11) 3207-8877');
+    });
+  });
+
 });

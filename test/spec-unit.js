@@ -39,4 +39,30 @@ describe('PhoneFormatBr,', function () {
         }
       });
   });
+
+  /**
+   * THIS IS NOT PASSING. NEED TO SEE HOW TO PROPERLY TRIGGER THE
+   * FUNCTION TO APPLY WHAT WE WANT :(((
+   */
+  // describe('PhoneFormatBr directive', function () {
+  //   var elm;
+  //   var scope;
+
+  //   beforeEach(inject(function ($compile, $rootScope) {
+  //     elm = angular.element(
+  //       '<div>' +
+  //         '<input type="text" ng-model="phoneInput" phone-validator />' +
+  //       '</div>');
+
+  //     scope = $rootScope;
+  //     $compile(elm)(scope);
+  //     elm.val('11981813731');
+  //     scope.$apply();
+  //   }));
+
+  //   it('should validate the input', function () {
+  //     expect(elm.val()).toBe('(11) 98181-3731');
+  //   });
+  // });
+
 });
