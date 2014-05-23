@@ -1,7 +1,6 @@
 describe('PhoneFormatBr,', function () {
   'use strict';
 
-
   beforeEach(function () {
     module('phone-format-br');
   });

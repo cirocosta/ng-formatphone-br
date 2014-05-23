@@ -1,10 +1,18 @@
 'use strict';
 
-describe('my app', function() {
+describe('phoneFormatBr', function() {
 
-  browser.get('demo/index.html');
+  beforeEach(function () {
+    browser.get('demo/index.html');
+  });
 
-  it('should work', function () {
-    expect('a').toBe('a');
+  describe('filter,', function () {
+
+    it('should apply the filter', function () {
+      element(by.model('phoneInput')).sendKeys('551132078877');
+      var pI = element(by.binding('phoneInput'));
+
+      expect(pI.getText()).toEqual('(11) 3207-8877');
+    });
   });
 });
