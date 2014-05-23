@@ -58,7 +58,12 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
             }
           }
 
-          result += '(' + ddd + ') ' + prefix + '-' + lastFour;
+          if (lastFour) {
+            result += '(' + ddd + ') ' + prefix + '-' + lastFour;
+          } else {
+            result += '(' + ddd + ') ' + prefix;
+          }
+
         }
       }
     }
@@ -69,38 +74,41 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
   return _formatPhone;
 }).directive('phoneValidator', ['$filter',function ($filter) {
 
-    var formatPhoneBrFilter = $filter('phoneFormatBr');
+  var formatPhoneBrFilter = $filter('phoneFormatBr');
 
-    function _removeNonNumeric(str) {
-        if (typeof str === 'string' || str instanceof String)
-            return str.replace(/\D/g, '');
-        return '';
-    };
+  function _removeNonNumeric(str) {
+    if (typeof str === 'string' || str instanceof String)
+      return str.replace(/\D/g, '');
 
-    function _applyFormat(str) {
-        return formatPhoneBrFilter(_removeNonNumeric(str));
-    };
+    return '';
+  };
 
-    return {
-        restrict: 'A',
-        require: '^ngModel',
-        scope: {
-            ngModel: '='
-        },
-        link: function (scope, elem, attrs, ngModelController) {
-            ngModelController.$parsers.push(function (data) {
-                data = data || ' ';
-                return _removeNonNumeric(data);
-            });
+  function _applyFormat(str) {
+    if (!str) return '';
 
-            ngModelController.$formatters.push(function (data) {
-                return _applyFormat(data);
-            });
+    return formatPhoneBrFilter(_removeNonNumeric(str));
+  };
 
-            elem.bind('keyup', function (e) {
-                var currVal = elem.val();
-                elem.val(_applyFormat(currVal));
-            });
-        }
-    };
+  return {
+    restrict: 'A',
+    require: '^ngModel',
+    scope: {
+      ngModel: '='
+    },
+    link: function (scope, elem, attrs, ngModelController) {
+      ngModelController.$parsers.push(function (data) {
+        data = data || '';
+        return _removeNonNumeric(data);
+      });
+
+      ngModelController.$formatters.push(function (data) {
+        return _applyFormat(data);
+      });
+
+      elem.bind('keyup', function (e) {
+        var currVal = elem.val();
+        elem.val(_applyFormat(currVal));
+      });
+    }
+  };
 }]);
