@@ -15,7 +15,12 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
       var s = raw.substring(4,7);
       var t = raw.substring(7, N);
 
-      result = f + " " + s + " " + t;
+      if (t) {
+        result = f + " " + s + " " + t;
+      } else {
+        result = f + " " + s;
+      }
+
     } else {
       if (N <= 5) {
         result = raw;

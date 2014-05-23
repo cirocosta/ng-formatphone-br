@@ -22,8 +22,10 @@ describe('PhoneFormatBr,', function () {
       '199', '199'],
     ['it is an special number',
       '08007260505','0800 726 0505'],
-    ['may break',
+    ['may not add a hyphen if not necessary',
       '1598181', '(15) 98181'],
+    ['may not add a space if not necessary',
+      '0800215', '0800 215'],
   ];
 
   describe('PhoneFormatBr filter', function () {
