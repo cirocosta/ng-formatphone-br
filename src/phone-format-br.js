@@ -1,5 +1,6 @@
 angular.module('phone-format-br', [])
     .filter('phoneFormatBr', function () {
+
       var _formatPhone = function (raw) {
 
         if (!raw) return '';
