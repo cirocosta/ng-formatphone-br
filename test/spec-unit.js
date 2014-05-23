@@ -24,7 +24,9 @@ describe('PhoneFormatBr,', function () {
       '08007260505','0800 726 0505'],
     ['may not add a hyphen if not necessary',
       '1598181', '(15) 98181'],
-    ['may not add a space if not necessary',
+    ['may not add a space if not necessary at the middle',
+      '0800', '0800'],
+    ['may not add a space if not necessary at the end',
       '0800215', '0800 215'],
   ];
 

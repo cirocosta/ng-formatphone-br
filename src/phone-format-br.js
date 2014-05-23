@@ -17,8 +17,10 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
 
       if (t) {
         result = f + " " + s + " " + t;
-      } else {
+      } else if(s) {
         result = f + " " + s;
+      } else {
+        result = f;
       }
 
     } else {
