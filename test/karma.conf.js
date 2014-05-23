@@ -7,7 +7,6 @@ module.exports = function(config){
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'src/phone-format-br.js',
-      'test/cases.js',
       'test/spec-unit.js'
     ],
 
