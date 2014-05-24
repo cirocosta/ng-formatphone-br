@@ -1,4 +1,4 @@
-# FormatPhoneBR
+# FormatPhoneBR ![travis build status for master](https://travis-ci.org/cirocosta/ng-formatphone-br.svg?branch=master)
 
 See it [live!](http://plnkr.co/KaXW4oPFSkDWg9xlEihD)
 
