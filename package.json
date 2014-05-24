@@ -1,17 +1,19 @@
 {
   "name": "ng-formatPhone-br",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AngularJS filter and directive for formating brazillian phone numbers",
+  "main": "src/phone-format-br.js",
   "directories": {
-    "test": "test"
+    "lib": "src/",
+    "example": "demo/"
   },
   "scripts": {
-    "update-webdriver": "webdriver-manager update",
-    "test": "karma start test/karma.conf.js",
+    "start-server": "node node_modules/http-server/bin/http-server",
+
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
+    "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor test/protractor.conf.js",
-    "start-server": "node node_modules/http-server/bin/http-server"
+    "protractor": "node node_modules/protractor/bin/protractor test/protractor.conf.js"
   },
   "repository": {
     "type": "git",
