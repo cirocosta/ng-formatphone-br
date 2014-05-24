@@ -10,6 +10,4 @@ before_script:
   - sleep 1 # give server time to start
 
 script:
-  - npm run start-server
   - node node_modules/karma/bin/karma start test/karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox
-  - node node_modules/protractor/bin/protractor test/protractor.conf.js --browser=firefox
