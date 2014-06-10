@@ -22,7 +22,6 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
       } else {
         result = f;
       }
-
     } else {
       if (N <= 5) {
         result = raw;
@@ -39,8 +38,8 @@ angular.module('phone-format-br', []).filter('phoneFormatBr', function () {
           cel = raw[4];
 
           if (cel === '9') {
-            prefix = raw.substring(4, 9);
-            lastFour = raw.substring(9, N);
+            prefix = raw.substring(4, 8);
+            lastFour = raw.substring(8, N);
           } else if (cel !== '9' && N === 11) {
             prefix = raw.substring(4, 7);
             lastFour = raw.substring(7, N);
