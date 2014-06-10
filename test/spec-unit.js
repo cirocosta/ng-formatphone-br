@@ -28,6 +28,8 @@ describe('PhoneFormatBr,', function () {
       '0800', '0800'],
     ['may not add a space if not necessary at the end',
       '0800215', '0800 215'],
+    ['should not break phones with DDD 55 preceeded by 55 country code',
+      '555599997171', '(55) 9999-7171']
   ];
 
   describe('PhoneFormatBr filter', function () {

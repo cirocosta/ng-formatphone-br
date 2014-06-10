@@ -19,6 +19,7 @@ As a filter, filters it (ooooh, don't say), and as a directive, 'masks' the inpu
 |          0800 | 0800            |
 |       0800215 | 0800 215        |
 |   08007260505 | 0800 726 0505   |
+|  555599997171 | (55) 9999-7171  |
 
 ## Quickuse
 
